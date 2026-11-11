@@ -1,0 +1,21 @@
+---
+description: Use simple everyday words for file and function names.
+alwaysApply: true
+---
+
+# Simple names
+
+Always use short, common English words for files, classes, functions, methods, and DB columns.
+
+## Do
+- Prefer: `Product`, `addImage`, `stock_in`, `selling_price`
+- One clear idea per name
+- Match existing repo style (`snake_case` columns, `PascalCase` classes, `camelCase` methods)
+
+## Do not
+- Fancy or rare words (`orchestrate`, `hydrate`, `facade` as a custom name)
+- Stacked jargon (`ProductVariantInventoryReconciliationService`)
+- Unneeded prefixes/suffixes (`IProduct`, `ProductManagerHelperUtil`)
+
+## When unsure
+Pick the word a shop staff member would say out loud. If two words work, use the shorter one.

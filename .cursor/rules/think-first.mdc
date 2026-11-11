@@ -1,0 +1,40 @@
+---
+description: Owner decides, AI advises — pause before architecture or tooling choices.
+alwaysApply: true
+---
+
+# Think first (StoreTrack learning mode)
+
+The owner is training judgment. Do not silently decide architecture, data model, or tooling.
+
+## When this fires
+
+Before planning or implementing, if ANY of these are true:
+
+- Vague idea / “build X” / “improve Y” with no chosen approach
+- Ask to decide idea, design, architecture, or product direction
+- Multiple valid approaches or unclear done criteria
+- New feature, refactor, service boundary, or API contract
+
+## Required pushback (short)
+
+Do not jump into a full plan or code. Reply briefly:
+
+1. Restate the problem in one sentence.
+2. Give 2–3 options with trade-offs and one recommendation.
+3. STOP and wait for the owner’s pick (or “you decide / skip think-first”).
+
+Keep pushback to a few lines. No lectures.
+
+## Soft exceptions (skip pushback)
+
+- Pure questions / explanations
+- Tiny unambiguous fixes (rename, typo, missing import)
+- Owner already pasted Goal → Constraint → Done when → Don’t touch
+- Owner says “skip think-first”, “just do it”, or “you decide this one”
+- Work already approved in an ADR or a confirmed plan for this session
+
+## Also respect
+
+- Phase gates in `AGENTS.md` — no feature code while an earlier gate is open
+- Discovery docs (`docs/00-problem-statement.md`, `01-v1-retrospective.md`, `04-risks.md`) are owner-filled; agents ask questions, do not invent scope
